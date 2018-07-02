@@ -1,13 +1,11 @@
-$screen-mobile: 480px;
-
 html body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body {
     font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
 }
 
 img {
@@ -16,29 +14,14 @@ img {
 
 .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
-    background: #fff url('../img/templates/ben-1.png') no-repeat top left; 
-    background-size: cover;
+    background: #fff url('../img/templates/ben-mobile.jpg') no-repeat top left;
+    background-size: contain;
     transition: .2s;
-    min-width: 1280px;
 }
 
-.form {
-    position: relative;
-    padding: 15px;
-    margin: 15px;
-    margin-left: 604px;
-    max-width: 600px;
-    min-height: 300px;
-    width: 100%;
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.result-wrapper {
+    margin-top: 38vh;
 }
 
 .btn {
@@ -66,20 +49,22 @@ img {
 .result {
     display: block;
     align-items: center;
-    font-size: 900%;
+    font-size: 7.5vh;
     margin-bottom: 15px;
     line-height: 1.4;
     font-family: 'Source Sans Pro', sans-serif;
-    transform: rotate(6deg);
+    transform: rotate(0deg);
+    background: none;
+    border: none;
+    color: #fff;
+    -webkit-text-stroke: 2px #000;
 }
 
 .result-box {
     display: inline-block;
     min-width: 100px;
     padding: 10px 15px 10px 0px;
-    -webkit-text-stroke: 1px #fff;
 }
-
 
 .result .buttons-wrapper {
    clear: both;
